@@ -1,0 +1,100 @@
+<footer
+  class="footer-section bg-dark text-white pt-5 pb-3 border-top border-secondary border-opacity-10"
+  dir="rtl"
+>
+  <div class="container">
+    <div class="row g-4 justify-content-lg-between pb-4">
+      <div class="col-12 col-md-6 col-lg-3 text-center text-md-start">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3"
+        >
+          <span
+            class="footer-logo text-white fw-bold rounded-3 d-flex align-items-center justify-content-center pb-2"
+          >
+            ع
+          </span>
+          <h3 class="h4 fw-bold mb-0 text-white">عدسة</h3>
+        </div>
+        <p class="text-secondary small leading-relaxed mb-4">
+          مدونة متخصصة في فن التصوير الفوتوغرافي. نشارك معكم أسرار المحترفين ونصائح عملية لتطوير
+          مهاراتكم.
+        </p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-2">
+          <a href="#" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon-btn"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h5 class="footer-title position-relative pb-2 mb-3 fw-bold">استكشف</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+          <li>
+            <a routerLink="/home" class="text-secondary text-decoration-none hover-orange"
+              >الرئيسية</a
+            >
+          </li>
+          <li>
+            <a routerLink="/blog" class="text-secondary text-decoration-none hover-orange"
+              >المدونة</a
+            >
+          </li>
+          <li>
+            <a routerLink="/about" class="text-secondary text-decoration-none hover-orange"
+              >من نحن</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h5 class="footer-title position-relative pb-2 mb-3 fw-bold">التصنيفات</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+          <li><a href="#" class="text-secondary text-decoration-none hover-orange">إضاءة</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none hover-orange">بورتريه</a></li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none hover-orange">مناظر طبيعية</a>
+          </li>
+          <li><a href="#" class="text-secondary text-decoration-none hover-orange">تقنيات</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="footer-title position-relative pb-2 mb-3 fw-bold">ابقى على اطلاع</h5>
+        <p class="text-secondary small mb-3">اشترك للحصول على أحدث المقالات والتحديثات.</p>
+        <form (submit)="$event.preventDefault()">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control custom-input rounded-3 bg-dark text-white border-secondary border-opacity-20 py-2 px-3 small"
+              placeholder="أدخل بريدك الإلكتروني"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn customSub btn-orange w-100 py-2 rounded-pill fw-bold text-white"
+          >
+            اشترك
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="border-top border-secondary border-opacity-10 pt-4 mt-2 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary"
+    >
+      <div>
+        <span
+          >© 2026 عدسة. صنع بكل <i class="bi bi-heart-fill text-danger mx-1"></i> جميع الحقوق
+          محفوظة.</span
+        >
+      </div>
+      <div class="d-flex gap-4">
+        <a href="#" class="text-secondary text-decoration-none hover-orange">سياسة الخصوصية</a>
+        <a href="#" class="text-secondary text-decoration-none hover-orange">شروط الخدمة</a>
+      </div>
+    </div>
+  </div>
+</footer>

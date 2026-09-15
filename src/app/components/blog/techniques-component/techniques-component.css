@@ -1,0 +1,21 @@
+.post-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #16181d !important;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-card-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}

@@ -1,0 +1,42 @@
+<div class="row g-4">
+  @for (post of posts; track post.id) {
+    @if (post.category === 'بورتريه') {
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark text-white border-0 h-100 post-card">
+          <div class="position-relative">
+            <img [src]="post.image" [alt]="post.title" class="card-img-top post-card-img" />
+            <span
+              class="badge rounded-pill bg-dark bg-opacity-75 position-absolute top-0 end-0 m-3"
+            >
+              {{ post.category }}
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 text-secondary small mb-2">
+              <span><i class="bi bi-clock"></i> {{ post.readTime }}</span>
+              <span>{{ post.date }}</span>
+            </div>
+            <h5 class="card-title fw-bold">{{ post.title }}</h5>
+            <p class="card-text text-secondary small">{{ post.excerpt }}</p>
+
+            <div
+              class="d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-secondary-subtle"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  [src]="post.author.avatar"
+                  [alt]="post.author.name"
+                  class="rounded-circle author-avatar"
+                />
+                <div>
+                  <div class="small fw-semibold">{{ post.author.name }}</div>
+                  <div class="small text-secondary">{{ post.author.role }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  }
+</div>

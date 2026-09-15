@@ -1,0 +1,147 @@
+.blog-section {
+  background-color: var(--main-bg);
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 350px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 150, 30, 0.25) 0%,
+    rgba(255, 94, 30, 0.08) 45%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blog-section .btn-orange {
+  background-color: #f97316 !important;
+  color: #fff !important;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.blog-section .btn-orange:hover {
+  background-color: #ff5e1e !important;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.blog-section .btn-outline-custom {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.blog-section .btn-outline-custom:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #404040;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.bgBadge {
+  border: 0.1px solid #965815;
+  background-color: #23160b;
+}
+.bgBadge span {
+  font-size: 16px;
+  font-weight: 100;
+  color: #f97316;
+}
+.blog-section p {
+  font-weight: 100;
+}
+@keyframes pulsate-fwd {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.pulsate-fwd {
+  font-size: 5px;
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  display: inline-block;
+}
+.bolipump {
+  font-size: 5px;
+  animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  display: inline-block;
+}
+@keyframes bolipump {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  33% {
+    transform: scale(1.4);
+  }
+  17% {
+    transform: scale(1.1);
+  }
+  45% {
+    transform: scale(1);
+  }
+}
+.bolipump {
+  font-size: 5px;
+  color: var(--accent-orange, #f97316);
+  animation: bolipump 1.5s ease-in-out infinite both;
+  display: inline-block;
+}
+
+.post-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #16181d !important;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-card-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.prev-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+.input-group {
+  max-width: 280px;
+}
+input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(218, 107, 3, 0.25);
+}
+
+.blognestedrouting {
+  background-color: #f97316;
+  color: white;
+}

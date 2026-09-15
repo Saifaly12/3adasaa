@@ -1,0 +1,147 @@
+<!-- ===== HERO ===== -->
+<section class="hero-section grid-bg py-5" dir="rtl">
+  <div class="container text-center position-relative py-4">
+    <div
+      class="d-inline-flex bgBadge align-items-center gap-2 px-3 py-2 mt-4 rounded-pill mb-4 fs-7"
+    >
+      <i class="fa-solid fa-circle text-orange bolipump"></i>
+      <i class="fa-solid fa-circle text-orange pulsate-fwd"></i>
+      <span>من نحن</span>
+    </div>
+    <h1 class="fw-bold text-white display-5 mb-3">
+      مهمتنا هي<span class="text-orange"> الإعلام والإلهام</span>
+    </h1>
+    <p class="text-secondary mx-auto mb-4" style="max-width: 640px">
+      مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير
+      مهاراتكم. نحن شغوفون بمشاركة المعرفة ومساعدة المصورين على تنمية مهاراتهم من خلال محتوى عالي
+      الجودة.
+    </p>
+
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-card px-2 py-4 rounded-4">
+          <i class="bi bi-journal-bookmark stat-icon"></i>
+          <h5 class="text-white mb-0">15+</h5>
+          <small>تأسيس</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card px-2 py-4 rounded-4">
+          <i class="bi bi-pencil-square stat-icon"></i>
+          <h5 class="text-white mb-0">50+</h5>
+          <small>كاتب خبير</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card px-2 py-4 rounded-4">
+          <i class="bi bi-file-earmark-text stat-icon"></i>
+          <h5 class="text-white mb-0">500+</h5>
+          <small>مقالة منشورة</small>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card px-2 py-4 rounded-4">
+          <i class="bi bi-people stat-icon"></i>
+          <h5 class="text-orange fw-bold mb-0">2+ مليون</h5>
+          <small>قارئ شهرياً</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES ===== -->
+<section class="values-section py-5" dir="rtl">
+  <div class="container text-center">
+    <span class="badge-tag mb-3">| قيمنا |</span>
+    <p class="fw-normal text-white-50 mb-2">المبادئ التي توجه كل ما نقوم بنشاطه</p>
+
+    <div class="row g-3 mt-4">
+      <div class="col-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon"><i class="bi bi-arrow-repeat"></i></div>
+          <h6 class="text-white mb-1">دائماً محدث</h6>
+          <p class="mb-0">أحدث الاتجاهات وأفضل الممارسات</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon"><i class="bi bi-people"></i></div>
+          <h6 class="text-white mb-1">المجتمع</h6>
+          <p class="mb-0">نتعلم مع أهم المصورين</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h6 class="text-white mb-1">تركيز عملي</h6>
+          <p class="mb-0">أمثلة واقعية يمكنك تطبيقها اليوم</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="value-card">
+          <div class="value-icon"><i class="bi bi-bullseye"></i></div>
+          <h6 class="text-white mb-1">الجودة أولاً</h6>
+          <p class="mb-0">محتوى مدروس ومكتوب بخبرة</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="team-section py-5" dir="rtl">
+  <div class="container text-center">
+    <div
+      class="d-inline-flex bgBadge align-items-center gap-1 px-3 py-2 mt-4 rounded-pill mb-4 fs-7"
+    >
+      <i class="fa-solid fa-circle text-orange pulsate-fwd"></i>
+      <span>فريقنا</span>
+    </div>
+    <h2 class="fw-bold text-white mb-2">تعرف على كتابنا</h2>
+    <p class="text-secondary mb-5">
+      فريقنا من المصورين والكتاب ذوي الخبرة يشاركون بمعرفتهم مع المجتمع
+    </p>
+
+    <div class="row g-4">
+      @for (one of posts.slice(0, 10); track one.id) {
+        <div class="col-6 col-lg-4">
+          <div class="team-card">
+            <div class="avatar-wrap">
+              <img [src]="one.image" [alt]="one.title" class="avatar" />
+              <span class="verified-badge"><i class="bi bi-check-lg"></i></span>
+            </div>
+            <h6 class="text-white mb-0 mt-3">{{ one.author.name }}</h6>
+            <p class="role mb-3 text-orange">{{ one.category }}</p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-globe"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section py-5 text-center" dir="rtl">
+  <div class="container">
+    <h3 class="fw-bold text-white mb-2">لديك أسئلة؟ دعنا نتحدث!</h3>
+    <p class="mb-4 w-50 text-white mx-auto">
+      نحب أن نسمع منك، سواء كان لديك سؤال حول محتوانا أو تريد المساهمة أو فقط تريد إلقاء التحية، لا
+      تتردد في التواصل.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="#" class="btn text-white px-3 py-2 rounded-3 bg-black">
+        <i class="fa-regular fa-envelope"></i>
+        تواصل معنا
+      </a>
+      <a routerLink="/blog" class="btn text-white px-3 py-2 rounded-3 border">تصفح المقالات</a>
+    </div>
+  </div>
+</section>

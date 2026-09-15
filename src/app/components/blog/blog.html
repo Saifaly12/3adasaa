@@ -1,0 +1,77 @@
+<section class="blog-section text-center py-5 position-relative overflow-hidden">
+  <div class="container py-4">
+    <!-- Subtitle Badge -->
+    <div
+      class="d-inline-flex bgBadge align-items-center gap-2 px-3 py-2 mt-4 rounded-pill mb-4 fs-7"
+    >
+      <i class="fa-solid fa-circle text-orange bolipump"></i>
+      <i class="fa-solid fa-circle text-orange pulsate-fwd"></i>
+      <i class="fa-solid fa-newspaper text-orange"></i>
+      <span>المدونه</span>
+    </div>
+
+    <!-- Main Heading -->
+    <h1 class="display-3 fw-bold text-white mb-4">
+      استكشف <span class="text-orange">مقالاتنا</span>
+    </h1>
+
+    <p>اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث</p>
+  </div>
+</section>
+
+<section class="bg-black text-white py-5">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+      <div class="input-group">
+        <span class="input-group-text bg-dark border-secondary text-secondary">
+          <i class="bi bi-search"></i>
+        </span>
+        <input
+          type="text"
+          class="form-control bg-dark border-secondary text-white"
+          placeholder="ابحث في المقالات..."
+        />
+      </div>
+
+      <div class="d-flex flex-wrap gap-2">
+        <a
+          routerLink="/blog/all"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >جميع المقالات</a
+        >
+        <a
+          routerLink="/blog/equipment"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >إضاءة</a
+        >
+        <a
+          routerLink="/blog/techniques"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >تقنيات</a
+        >
+        <a
+          routerLink="/blog/landscape"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >بورتريه</a
+        >
+        <a
+          routerLink="/blog/portrait"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >مناظر طبيعية</a
+        >
+        <a
+          routerLink="/blog/lighting"
+          routerLinkActive="blognestedrouting"
+          class="btn border text-white rounded-pill px-3"
+          >معدات</a
+        >
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</section>
